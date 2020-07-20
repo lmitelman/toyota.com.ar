@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CarComponent implements OnInit {
 
 	loading: boolean;
-	url: string = "http://challenge.agenciaego.tech"
+	url: string = "https://challenge.agenciaego.tech"
 	myCar: any = {};
 	responsiveOptions: any[];
 

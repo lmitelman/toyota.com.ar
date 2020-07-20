@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
 	loading: boolean;
-	url: string = "http://challenge.agenciaego.tech"
+	url: string = "https://challenge.agenciaego.tech"
 	cars: any;
 	allCars: any;
 

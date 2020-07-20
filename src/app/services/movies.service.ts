@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators'; // Map
 @Injectable()
 export class CarsService {
 
-	private url: string = "http://challenge.agenciaego.tech"
+	private url: string = "https://challenge.agenciaego.tech"
 
 	constructor(
 		private http: HttpClient
