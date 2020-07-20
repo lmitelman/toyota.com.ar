@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { CarsService } from 'src/app/services/movies.service';
+import { CarsService } from 'src/app/services/cars.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
 	selector: 'app-movie',
-	templateUrl: './movie.component.html',
-	styleUrls: ['./movie.component.css']
+	templateUrl: './car.component.html',
+	styleUrls: ['./car.component.css']
 })
 export class CarComponent implements OnInit {
 
@@ -15,13 +15,13 @@ export class CarComponent implements OnInit {
 	responsiveOptions: any[];
 
 	constructor(
-		private moviesService: CarsService,
+		private carsService: CarsService,
 		private router: ActivatedRoute
 	) {
 		this.loading = true;
 		this.router.params.subscribe(params => {
 			console.log(params);
-			this.getMovie(params.id);
+			this.getCar(params.id);
 		});
 		this.responsiveOptions = [
 			{
@@ -42,8 +42,8 @@ export class CarComponent implements OnInit {
 		];
 	}
 
-	getMovie(id: string) {
-		this.moviesService.getCar(id)
+	getCar(id: string) {
+		this.carsService.getCar(id)
 			.subscribe(movie => {
 				this.myCar = movie;
 				console.log(this.myCar);

@@ -58,10 +58,9 @@
     </div>
 
     <div class="card-columns mt-1">
-        <div *ngFor="let car of cars" class="card my-lg-5 my-md-5 my-sm-5" (click)="goToMovie(car.id)">
+        <div *ngFor="let car of cars" class="card my-lg-5 my-md-5 my-sm-5" (click)="goToCar(car.id)">
             <div class="card-body p-2 d-flex flex-column justify-content-center">
                 <h5 class="card-title text-center">
-                    <!-- {{movie.title | textContentTruncate:{sliceStart: 0, sliceEnd: 30, append: '...'} }} -->
                     {{ car.name }}
                 </h5>
                 <p class="text-center m-0"><span class="mx-1">{{ car.year }}</span> | <span

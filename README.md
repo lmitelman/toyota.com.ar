@@ -1,6 +1,6 @@
 # toyota.com.ar | Ego Agency
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.26 and created for the selection process of Ego Agency.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.26 for the selection process of Ego Agency.
 
 ## See it live
 

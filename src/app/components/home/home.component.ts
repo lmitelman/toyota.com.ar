@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CarsService } from 'src/app/services/movies.service';
+import { CarsService } from 'src/app/services/cars.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -29,36 +29,9 @@ export class HomeComponent implements OnInit {
 				this.cars = response;
 				this.loading = false;
 			})
-		// this.carsService.getPopulares()
-		// 	.subscribe(response => {
-		// 		for (let counter: number = 1; counter <= 9; counter++) {
-		// 			this.popularMoviesArray.push(response[counter]);
-		// 		}
-		// 		console.log(this.popularMoviesArray);
-		// 		this.loading = false;
-		// 	});
-		// this.carsService.getGenres()
-		// 	.subscribe((response: any) => {
-		// 		this.genresArray = response;
-		// 		// console.log(this.genresArray);
-		// 	});
-		// this.carsService.getTopRated()
-		// 	.subscribe((response: any) => {
-		// 		this.topRatedMoviesArray = response;
-		// 		console.log(this.topRatedMoviesArray);
-		// 	});
-		// this.carsService.getOnTheatreMovies()
-		// 	.subscribe((response: any) => {
-		// 		for (let counter: number = 1; counter <= 9; counter++) {
-		// 			this.onTheatreMoviesArray.push(response[counter]);
-		// 		}
-		// 		console.log(this.onTheatreMoviesArray);
-		// 		this.loading = false;
-		// 		console.log(response);
-		// 	});
 	}
 
-	goToMovie(id: string) {
+	goToCar(id: string) {
 		this.router.navigate(['car', id])
 	}
 
