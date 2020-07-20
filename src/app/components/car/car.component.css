@@ -41,6 +41,10 @@ h3 {
         padding-right: 5%;
     }
 
+    .img-fluid {
+        margin-top: 10%;
+    }
+
     h1 {
         font-size: 20px;
     }
