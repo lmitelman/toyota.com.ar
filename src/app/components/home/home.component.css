@@ -1,0 +1,106 @@
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+h4 {
+    margin-bottom: 0;
+    padding: 2%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.container-fluid {
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.car-img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.card-columns {
+    column-count: 4;
+}
+
+.card {
+    border: none !important;
+}
+
+.card:hover > div > h5 {
+    color: #eb0a1e;
+}
+
+.card:hover > .card-footer {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.card:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-footer {
+    border-top: 0px;
+    opacity: 0;
+    background-color: white;
+}
+
+.filter-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filter-bar {
+    display: flex !important;
+}
+
+.filter-dropdown {
+    display: none !important;
+}
+
+.dropdown-menu {
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .card-columns {
+        column-count: 1;
+    }
+
+    .container-fluid {
+        margin-top: 0%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .card-footer {
+        padding: 0px;
+    }
+
+    .filter-bar {
+        display: none !important;
+    }
+
+    .filter-dropdown {
+        display: flex !important;
+    }
+}

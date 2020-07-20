@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+html,
+body {
+    height: 100%;
+}
+
+* {
+    font-family: 'Montserrat', "Helvetica Neue", sans-serif;
+}
+
+body {
+    margin: 0;
+    font-weight: 600;
+}
+
+a {
+    font-size: 14px;
+    color: black !important;
+}
+
+.red {
+    color: black;
+    font-size: 24px;
+}
+
+a:hover {
+    color: #eb0a1e !important;
+}
+
+.main-container {
+    margin-top: 10px;
+}
+
+.activeLink {
+    color: #eb0a1e !important;
+    border-bottom: 4px solid #eb0a1e !important;
+}
+
+.card:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+button:focus {
+    outline:0;
+}
+
+.copyright {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+

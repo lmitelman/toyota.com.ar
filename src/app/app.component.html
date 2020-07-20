@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg p-0 border-bottom">
+    <img src="../assets/logo.png" class="mx-4 py-3" alt="...">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-3">
+            <li class="nav-item">
+                <a class="nav-link py-4 mx-3" routerLink="/home" routerLinkActive="activeLink">Modelos</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link py-4 mx-3" routerLink="/search" routerLinkActive="activeLink">Ficha de modelo</a> -->
+                <a class="nav-link py-4 mx-3" routerLinkActive="activeLink">Ficha de modelo</a>
+            </li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-light mx-4" (click)="openNav()">
+        Menú
+        <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+        </span>
+    </button>
+</nav>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a class="mt-3">Modelos</a>
+    <a>Servicios y Accesorios</a>
+    <a>Financiación</a>
+    <a class="mb-3">Reviews y Comunidad</a>
+    <hr>
+    <a class="mt-3">Toyota Mobility Service</a>
+    <a>Servicios y Accesorios</a>
+    <a>Toyota Gazoo Racing</a>
+    <a class="mb-3">Toyota Híbridos</a>
+    <hr>
+    <a class="mt-3">Concesionarios</a>
+    <a>Test Drive</a>
+    <a class="mb-3">Contacto</a>
+    <hr>
+    <a class="mt-3">Actividades</a>
+    <a>Servicios al Cliente</a>
+    <a>Ventas Especiales</a>
+    <a>Innovación</a>
+    <a>Prensa</a>
+    <a class="mb-3">Acerca de...</a>
+</div>
+
+<router-outlet></router-outlet>
+
+<footer class="py-3 bg-dark d-flex justify-content-center">
+    <a href="https://www.linkedin.com/in/lmitelman/" target="_blank" class="copyright text-white">made with ❤ by Lautaro
+        Mitelman</a>
+</footer>
